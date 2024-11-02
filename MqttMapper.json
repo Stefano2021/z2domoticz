@@ -1,0 +1,96 @@
+{
+"Temp_0x6C79": {
+        "type": "80", "subtype": "5", "switchtype": "0",
+        "mapping": {"item": "0x6C79#Temperature"}
+	},
+"Temp_0x8584": {
+        "type": "80", "subtype": "5", "switchtype": "0",
+        "mapping": {"item": "0x8584#Temperature"}
+	},
+"Temp_0xAE30": {
+        "type": "80", "subtype": "5", "switchtype": "0",
+        "mapping": {"item": "0xAE30#Temperature"}
+	},
+"Temp_0x92C0": {
+        "type": "80", "subtype": "5", "switchtype": "0",
+        "mapping": {"item": "0x92C0#Temperature"}
+	},
+"Temp_0x0B80": {
+		"type": "80", "subtype": "5", "switchtype": "0",
+		"mapping": {"item": "0x0B80#Temperature"}
+	},
+"Hum_0x92C0": {
+        "type": "81", "subtype": "1", "switchtype": "0",
+        "mapping": {"item": "0x92C0#Humidity"}
+	},
+"PW_A": {
+        "type": "243", "subtype": "29", "switchtype": "0",
+        "mapping": {"item": "0xF47E#TotalPowerA"}
+	},
+"PW_B": {
+        "type": "243", "subtype": "29", "switchtype": "0",
+        "mapping": {"item": "0xF47E#TotalPowerB"}
+	},
+"Air_quality": {
+    	"type": "249", "subtype": "1", "switchtype": "0",
+    	"mapping": {"item": "0x8F1F#AnalogValue"}
+	},
+"Boiler_PW": {
+        "type": "248", "subtype": "1", "switchtype": "0",
+    	"mapping": {"item": "0x734A#ActivePower"}
+	},
+"AC_PW": {
+        "type": "243", "subtype": "29", "switchtype": "0",
+    	"mapping": {"item": "0xC4F2#ActivePower"}
+	},
+"Boiler_SW": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0x734A","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0x734A#Power", "values": {"0": "0", "1": "100"}}
+ 	},
+"LEAK_contact": {
+        "type": "244", "subtype": "73", "switchtype": "2",
+        "set": {"payload": {"device":"0xE169","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0xE169#Water", "values": {"0": "Close", "1": "Open"}}
+ 	},
+"Contact_1": {
+        "type": "244", "subtype": "73", "switchtype": "2",
+        "set": {"payload": {"device":"0x3AC8","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0x3AC8#Contact", "values": {"0": "Close", "1": "Open"}}
+ 	},
+"AC_SW": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0xC4F2","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0xC4F2#Power", "values": {"0": "0", "1": "100"}}
+ 	},
+"Wash_SW": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0xBEEA","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0xBEEA#Power", "values": {"0": "0", "1": "100"}}
+ 	},
+"Wash_PW": {
+        "type": "243", "subtype": "29", "switchtype": "0",
+        "mapping": {"item": "0xBEEA#ActivePower"}
+	},
+"Room_SW": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0xD1B7","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0xD1B7#Power", "values": {"0": "0", "1": "100"}}
+    },
+"Cucina_SW": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0x5D2C", "endpoint":"0x0a", "send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0x5D2C#Power", "values": {"0": "0", "1": "100"}}
+    },
+"Light1_SW": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0x7761","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0x7761#Power", "values": {"0": "0", "1": "100"}}
+    },
+"Light1_SW_2": {
+        "type": "244", "subtype": "73", "switchtype": "0",
+        "set": {"payload": {"device":"0x200A","send":{"Power":"#"}}, "values": {"0": "0", "1": "1"}},
+        "mapping": {"item": "0x200A#Power", "values": {"0": "0", "1": "100"}}
+    }
+
+}
