@@ -11,9 +11,9 @@
         "type": "80", "subtype": "5", "switchtype": "0",
         "mapping": {"item": "0xAE30#Temperature"}
 	},
-"Temp_0x92C0": {
+"Temp_0x5904": {
         "type": "80", "subtype": "5", "switchtype": "0",
-        "mapping": {"item": "0x92C0#Temperature"}
+        "mapping": {"item": "0x5904#Temperature"}
 	},
 "Temp_0x0B80": {
 		"type": "80", "subtype": "5", "switchtype": "0",
