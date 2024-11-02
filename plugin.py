@@ -282,15 +282,17 @@ class BasePlugin:
 
         topiclist = topic.split('/')
         ZbReceived=message['ZbReceived']   #x = (y["ZbReceived"])
+        
         y = json.loads(json.dumps(ZbReceived))        
         
-        keys_list = list(y)    
+        keys_list = list(y)
+                
         zDevice = keys_list[0]
-        Domoticz.Log('keys_list  ' + str(len(keys_list))) 
+
         y = json.loads(json.dumps(y[zDevice]))
 
         keys_list = list(y)
-        
+
         for x in keys_list:
             device = self.getDevice(zDevice+"#"+x)
             if (device != None):
@@ -309,7 +311,7 @@ class BasePlugin:
                                 nValueToSet = int(valueToSet)
                             sValueToSet = str(valueToSet)
                         elif str(device.Type) == '81':   # This is a Humidity
-                            nValueToSet = float(valueToSet);
+                            nValueToSet = int(round(float(valueToSet),0));
                             Domoticz.Log('device.Type=81  '+device.Name+' to >'+str(nValueToSet)+'<')
                         else:
                             nValueToSet = int(round(float(valueToSet),0))
