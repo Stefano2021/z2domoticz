@@ -36,7 +36,7 @@
     	"mapping": {"item": "0x8F1F#AnalogValue"}
 	},
 "Boiler_PW": {
-        "type": "248", "subtype": "1", "switchtype": "0",
+        "type": "243", "subtype": "29", "switchtype": "0",
     	"mapping": {"item": "0x734A#ActivePower"}
 	},
 "AC_PW": {
