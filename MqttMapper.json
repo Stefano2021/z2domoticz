@@ -1,7 +1,7 @@
 {
-"Temp_0x6C79": {
+"Temp_0xCD57": {
         "type": "80", "subtype": "5", "switchtype": "0",
-        "mapping": {"item": "0x6C79#Temperature"}
+        "mapping": {"item": "0xCD57#Temperature"}
 	},
 "Temp_0x8584": {
         "type": "80", "subtype": "5", "switchtype": "0",
