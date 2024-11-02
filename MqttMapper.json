@@ -16,12 +16,12 @@
         "mapping": {"item": "0x5904#Temperature"}
 	},
 "Temp_0x0B80": {
-		"type": "80", "subtype": "5", "switchtype": "0",
-		"mapping": {"item": "0x0B80#Temperature"}
+	"type": "80", "subtype": "5", "switchtype": "0",
+	"mapping": {"item": "0x0B80#Temperature"}
 	},
-"Hum_0x92C0": {
+"Hum_0xCD57": {
         "type": "81", "subtype": "1", "switchtype": "0",
-        "mapping": {"item": "0x92C0#Humidity"}
+        "mapping": {"item": "0xCD57#Humidity"}
 	},
 "PW_A": {
         "type": "243", "subtype": "29", "switchtype": "0",
