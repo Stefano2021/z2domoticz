@@ -282,17 +282,15 @@ class BasePlugin:
 
         topiclist = topic.split('/')
         ZbReceived=message['ZbReceived']   #x = (y["ZbReceived"])
-        
         y = json.loads(json.dumps(ZbReceived))        
         
-        keys_list = list(y)
-                
+        keys_list = list(y)    
         zDevice = keys_list[0]
-
+        Domoticz.Log('keys_list  ' + keys_list) 
         y = json.loads(json.dumps(y[zDevice]))
 
         keys_list = list(y)
-
+        
         for x in keys_list:
             device = self.getDevice(zDevice+"#"+x)
             if (device != None):
