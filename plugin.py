@@ -312,6 +312,7 @@ class BasePlugin:
                             sValueToSet = str(valueToSet)
                         elif str(device.Type) == '91':   # This is a Humidity
                             nValueToSet = int(round(float(valueToSet),0));
+                            Domoticz.Log('device.Type=91  '+device.Name+' to >'+nvalueToSet+'<')
                         else:
                             nValueToSet = int(round(float(valueToSet),0))
                             nValueToSet=0
