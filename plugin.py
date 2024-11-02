@@ -286,7 +286,7 @@ class BasePlugin:
         
         keys_list = list(y)    
         zDevice = keys_list[0]
-        Domoticz.Log('keys_list  ' + keys_list) 
+        Domoticz.Log('keys_list  ' + str(len(keys_list))) 
         y = json.loads(json.dumps(y[zDevice]))
 
         keys_list = list(y)
