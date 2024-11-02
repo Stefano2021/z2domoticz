@@ -315,7 +315,7 @@ class BasePlugin:
                         else:
                             nValueToSet = int(round(float(valueToSet),0))
                             nValueToSet=0
-                            sValueToSet = readValue +'%;0'
+                            sValueToSet = readValue +';0'
                         Domoticz.Log('Setting '+device.Name+' to '+str(nValueToSet)+'/'+sValueToSet)  # Value is numeric or float
                         device.Update(nValue=nValueToSet, sValue=sValueToSet)
                     else:   # Value is not numeric
